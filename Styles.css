@@ -162,13 +162,14 @@ p {
   justify-content: center;
 }
 
+
 .About {
   display: inline-block;
   border: 1px solid red;
   padding: 1rem 1rem;
   vertical-align: middle;
   position: absolute;
-  margin-left:50%;
-  margin-top:50vh;
-  
+  margin-left: 50%;
+  margin-top: 50vh;
+
 }
