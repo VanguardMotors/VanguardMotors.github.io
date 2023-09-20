@@ -162,19 +162,31 @@ p {
   justify-content: center;
 }
 
-
-
-
-
-
-
-.aboutustext {
-  display: inline-block;
-  border: 1px solid red;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-  position: absolute;
-  margin-left: 50%;
-  margin-top: 0%;
-
+.carinforest{
+    background-image: url("Images/lincolnaviator2020.jpg");
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
