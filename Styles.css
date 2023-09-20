@@ -77,7 +77,7 @@ a:active {
 
 
 /* text soorten*/
-.ParagraphTitle {
+.paragraphtitle {
   color: white;
   text-align: center;
   font-size: 300%;
@@ -90,19 +90,19 @@ p {
 
 
 /*text op de achtergrond video */
-.TextOnCommercial {
+.textoncommercial {
   margin-top: 0px;
   text-align: center;
 }
 
-.TextOnCommercial h1 {
+.textoncommercial h1 {
   color: white;
   font-size: 500%;
   font-weight: 400;
 
 }
 
-.TextOnCommercial a {
+.textoncommercial a {
   text-decoration: none;
   display: inline-block;
   color: white;
@@ -146,14 +146,14 @@ p {
 
 
 /*Positie en stijlen van de afbeeldingen */
-.BackgroundStyle {
+.backgroundstyle {
   margin: 0px;
   padding: 0px;
   position: relative;
   display: flex;
 }
 
-.BackgroundVideoStyle {
+.backgroundvideostyle {
   width: 100%;
   /* Div waar de video en de navigatiebar op komen */
   height: 100vh;
@@ -163,13 +163,18 @@ p {
 }
 
 
-.About {
+
+
+
+
+
+.aboutustext {
   display: inline-block;
   border: 1px solid red;
   padding: 1rem 1rem;
   vertical-align: middle;
   position: absolute;
   margin-left: 50%;
-  margin-top: 50vh;
+  margin-top: 0%;
 
 }
