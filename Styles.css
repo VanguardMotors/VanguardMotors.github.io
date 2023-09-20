@@ -175,40 +175,28 @@ p {
   margin: 0px;
   padding: 0px;
   display: flex;
-
-}
-
-.carbackground {
-  background-image: url("Images/lincolnaviator2020.jpg");
-
-}
-
-.forestbackground {
-  background-image: url("Images/forestbackground.jpg");
+  z-index:-1; /* zodat er tekst over hen geplaatst kan worden*/
 }
 
 
 
 
 
+ 
 
-
-
-/* test voor de drie kolommen over ons
-
- Create three equal columns that floats next to each other 
+ /*Create three equal columns that floats next to each other*/ 
 .column {
   float: left;
   width: 33.33%;
   padding: 15px;
 }
 
-Clear floats after the columns 
+/*Clear floats after the columns */
 .row::after {
   content: "";
   display: table;
   clear: both;
+
 }
 
 
-*/
