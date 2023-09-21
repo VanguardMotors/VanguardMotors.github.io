@@ -144,10 +144,20 @@ p {
     width: 100%;
     height: auto;
   }
+
+  .backgroundimagestyle {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media(max-aspect-ratio:16/9) {
   .back-video {
+    width: auto;
+    height: 100%;
+  }
+
+  .backgroundimagestyle {
     width: auto;
     height: 100%;
   }
@@ -175,28 +185,36 @@ p {
   margin: 0px;
   padding: 0px;
   display: flex;
-  z-index:-1; /* zodat er tekst over hen geplaatst kan worden*/
+  z-index: -1;
+  /* zodat er tekst over hen geplaatst kan worden*/
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.carforest {
+  background-image: url('Images/lincolnaviator2020.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forest {
+  background-image: url('Images/forestbackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 
 
-
- 
-
- /*Create three equal columns that floats next to each other*/ 
 .column {
   float: left;
-  width: 33.33%;
-  padding: 15px;
+  width: 33%;
+  text-align: center;
 }
 
-/*Clear floats after the columns */
-.row::after {
-  content: "";
+/* Clear floats after the columns */
+.row:after {
+  width: 100% content: "";
   display: table;
   clear: both;
-
 }
-
-
