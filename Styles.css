@@ -88,11 +88,11 @@ a:active {
 .paragraphtitle {
   color: white;
   text-align: center;
-  font-size: 300%;
+  font-size: 200%;
 }
 
 p {
-  color: grey;
+  color: #bdbcbc;
   font-size: 150%;
 }
 
@@ -204,17 +204,43 @@ p {
 }
 
 
-
-
-.column {
-  float: left;
-  width: 33%;
-  text-align: center;
+/* afmetingen van de div*/
+.row {
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 15%;
+  vertical-align: middle;
 }
 
-/* Clear floats after the columns */
+/*kolommen*/
+.column {
+  float: left;
+  width: 25%;
+  text-align: center;
+  background-color: #7e7777;
+  margin-right: 5%;
+
+}
+
+
 .row:after {
-  width: 100% content: "";
+  content: "";
   display: table;
   clear: both;
+}
+
+/* -------------------------------------------------Contact site ------------------------*/
+
+.kolomc {
+  float: left;
+  width: 35%;
+  text-align: center;
+  height: 15%;
+  background-color: antiquewhite;
+  margin-right: 10%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+
+
+
 }
