@@ -39,10 +39,10 @@ li {
 li a {
   /*Hoe de elementen van de lijst eruit zien*/
   display: block;
-  padding: 12px;
-  font-size: 200%;
-  width: 200px;
-  height: 50px;
+  padding: 3vw;
+  font-size: 2.5vw;
+  width: 10vw;
+  height: 3vh;
 }
 
 li a:hover {
@@ -105,7 +105,7 @@ p {
 
 .textoncommercial h1 {
   color: white;
-  font-size: 500%;
+  font-size: 6vw;
   font-weight: 400;
 
 }
@@ -203,8 +203,19 @@ p {
   background-size: cover;
 }
 
+/* class gebruikt om een afbeelding te kunnen centreren*/
+.centerimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
-/* afmetingen van de div*/
+
+
+
+
+/* afmetingen van de about us kolommen division*/
 .row {
   width: 100%;
   margin-top: 5%;
@@ -216,6 +227,7 @@ p {
 .column {
   float: left;
   width: 25%;
+  height: 90%;
   text-align: center;
   background-color: rgb(166, 173, 168, 0.7);
   margin-right: 5%;
@@ -228,6 +240,25 @@ p {
   display: table;
   clear: both;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -------------------------------------------------Contact site ---------------------------------------*/
 
