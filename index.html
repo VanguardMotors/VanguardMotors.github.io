@@ -62,12 +62,57 @@
 
 
 
-  <div class="backgroundimagestyle carforest"> </div>
+  <div class="backgroundimagestyle carforest">
+
+    <div class="changingtextdiv">
+      <div class="slidingtextfunction">
+        <p class="changingtextstyle">Engineer</p>
+      </div>
+
+      <div class="slidingtextfunction">
+        <p class="changingtextstyle">Designer</p>
+      </div>
+
+      <div class="slidingtextfunction">
+        <p class="changingtextstyle">Innovator</p>
+      </div>
+
+      <div class="slidingtextfunction">
+        <p class="changingtextstyle">Creator</p>
+      </div>
+
+      <!-- Javascript code om steeds het woord te veranderen-->
+      <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slidingtextfunction");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {
+            slideIndex = 1
+          }
+          x[slideIndex - 1].style.display = "block";
+          setTimeout(carousel, 400);
+        }
+
+      </script>
+
+    </div>
+
+  </div>
 
 
 
 
-  <!-- Te doen: About us kopje boven background plaatsen-->
+
+
+
+
   <div class="backgroundimagestyle snowymountains">
 
     <div class="row">
@@ -130,20 +175,6 @@
 
 
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>
