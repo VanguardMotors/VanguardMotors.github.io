@@ -3,11 +3,15 @@ body {
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 
-/* Responsive maken voor telefoon*/
-
+/* Nav bar alleen maar voor telefoon groter maken met: 
+@media only screen and (max-width: 915px) {
+    width: 100%;
+  }
+*/
 
 
 /*navigation bar */
@@ -30,9 +34,6 @@ ul {
   overflow: hidden;
   background-color: transparent;
 
-  @media only screen and (max-width: 915px) {
-    width: 100%;
-  }
 }
 
 li {
@@ -87,7 +88,6 @@ a:active {
 
 
 
-
 /* text soorten*/
 .paragraphtitle {
   color: white;
@@ -97,8 +97,10 @@ a:active {
 
 p {
   color: #e3e3e3;
-  font-size: 2vw;
+  font-size: 200%;
 }
+
+
 
 
 /*text op de achtergrond video */
@@ -220,7 +222,7 @@ p {
 .changingtextstyle {
   font-size: 13vw;
   font-family: courier;
-  color:#f7f7f7
+  color: #f7f7f7
 }
 
 
@@ -263,9 +265,16 @@ p {
 }
 
 
+footer {
+  background-color: black;
 
+}
 
-
+.footertext {
+  color: white;
+  font-family: sans-serif;
+  font-size: 150%;
+}
 
 
 
