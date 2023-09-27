@@ -301,7 +301,18 @@ footer {
   margin-right: 10%;
   margin-left: 5%;
   margin-bottom: 10%;
+}
 
+.hero{
+background-color: #074f54;
+background-image: url(Images/nature.png);
+color:white;
 
-
+}
+.container{
+  max-width:960px;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-left:1rem ;
+  padding-right: 1rem;
 }
