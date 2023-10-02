@@ -303,16 +303,27 @@ footer {
   margin-bottom: 10%;
 }
 
-.hero{
-background-color: #074f54;
-background-image: url(Images/nature.png);
-color:white;
+.hero {
+  background-color: #074f54;
+  background-image: url(Images/nature.png);
+  color: white;
 
 }
-.container{
-  max-width:960px;
+
+.container {
+  max-width: 960px;
   margin-left: 0%;
   margin-right: 0%;
-  padding-left:1rem ;
+  padding-left: 1rem;
   padding-right: 1rem;
+}
+
+
+/* --------------------------------Social page---------------------------------------------------*/
+
+.containersocialpage {
+  position: relative;
+  top: 100px;
+  height: 100vh;
+  display: grid;
 }
