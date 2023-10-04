@@ -1,5 +1,5 @@
 body {
-
+  background-color: #454545;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -197,12 +197,14 @@ p {
   min-height: 100vh;
 }
 
+/*Achtergrond van de div van een auto in een bos*/
 .carforest {
   background-image: url('Images/lincolnaviator2020.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/*Achtergrond van de about us div*/
 .snowymountains {
   background-image: url('Images/snowymountains.jpg');
   background-repeat: no-repeat;
@@ -268,7 +270,7 @@ p {
 
 footer {
   background-color: #454545;
-
+  margin-bottom:0px;
 }
 
 .footertext {
@@ -277,17 +279,6 @@ footer {
   font-size: 110%;
   margin-top: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -412,43 +403,53 @@ a:active {
 
 
 
-/* -----------------------------------Product page ----------------------*/
+/* -----------------------------------Product page ---------------------------------*/
 
 #ourcarspage {
-  background-color: #999999;
+  background-color: white;
 }
 
-#textstyleourproducts {
-  text-align: center;
-  font-family: 'Franklin Gothic Medium';
-  font-weight: 400;
-  font-size: 5vw;
 
+/*nav voor alle pagina's behalve de hoofdpagina*/
+.navpage {
+  background-color: #6d745f;
+}
+
+
+
+
+/* Our products tet*/
+#textstyleourproducts {
+  color: black;
+  font-size: 3vw;
+  font-weight: 400;
+  margin-left: 5%;
 }
 
 #ourproductstextdiv {
   width: 100%;
   height: 30%;
-  margin-top: 15%
+  margin-top: 10%;
+
 }
 
 
 
 
+
+/*div waar de producten in komen*/
 .productdiv {
-  width: 98%;
-
-  margin-left: 1.5%;
+  width: 100%;
   margin-top: 5%;
-
+  position: relative;
 }
 
+/*3 kolommen maken voor de producten*/
 .products {
-  width: 33%;
-  height: auto;
+  width: 33.33333%;
+  height: 100%;
   float: left;
-
-
+  position: relative;
 }
 
 .products::after {
@@ -458,10 +459,22 @@ a:active {
 }
 
 
-
+/*text op de producten*/
 .carnametext {
+  color: white;
+  font-size: 2vw;
+  margin-left: 2%;
+  position: relative;
+
+}
+
+/*ervoor zorgen dat de tekst op het plaatje komt en niet eronder*/
+.text-overlay {
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
