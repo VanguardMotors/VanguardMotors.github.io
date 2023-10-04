@@ -296,13 +296,14 @@ footer {
 
 .kolomc {
   float: left;
-  width: 25vw;
+  width: 25%;
   text-align: center;
   height: 15%;
   background-color: black;
-  margin-right: 10%;
-  margin-left: 5%;
+  margin-right: 12.5%;
+  margin-left: 12.5%;
   margin-bottom: 10%;
+  display: flex;
 }
 
 .hero {
@@ -323,14 +324,14 @@ footer {
 
 }
 
-#paragraphtitle {
-  color:black;
+#paragraphcontact {
+  color: black;
   text-align: center;
   font-size: 200%;
 
 }
 
-p {
+#textincolumn {
   color: black;
   font-size: 200%;
 }
@@ -344,7 +345,7 @@ p {
   left: 0;
   display: flex;
   align-items: center;
-  background-color:black;
+  background-color: black;
 }
 
 ul {
@@ -413,11 +414,15 @@ a:active {
 
 /* -----------------------------------Product page ----------------------*/
 
+#ourcarspage {
+  background-color: #999999;
+}
+
 #textstyleourproducts {
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Franklin Gothic Medium';
   font-weight: 400;
-  font-size: 4vw;
+  font-size: 5vw;
 
 }
 
@@ -431,19 +436,19 @@ a:active {
 
 
 .productdiv {
-  width: 90%;
+  width: 98%;
 
-  margin-left: 5%;
+  margin-left: 1.5%;
   margin-top: 5%;
 
 }
 
 .products {
-  margin-right: 3.3%;
-  width: 30%;
+  width: 33%;
   height: auto;
   float: left;
-  margin-bottom: 3%;
+
+
 }
 
 .products::after {
@@ -454,7 +459,10 @@ a:active {
 
 
 
-/* Clear floats after image containers */
+.carnametext {
+  position: absolute;
+  top: 0;
+}
 
 
 
