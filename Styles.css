@@ -421,7 +421,7 @@ a:active {
 /* Our products tet*/
 #textstyleourproducts {
   color: black;
-  font-size: 3vw;
+  font-size:200%;
   font-weight: 400;
   margin-left: 5%;
 }
@@ -446,9 +446,8 @@ a:active {
 
 /*3 kolommen maken voor de producten*/
 .products {
-  width: 33.33333%;
+  width:100%;
   height: 100%;
-  float: left;
   position: relative;
 }
 
@@ -459,10 +458,33 @@ a:active {
 }
 
 
+/*Responsive maken!!!*/
+@media screen and (min-width: 960px) {
+  
+  /** Telefoon: auto's op elkaar, ipad en computer: naast elkaar. */
+  .products {
+    float: left;
+    width: 33.33333%;
+  }
+
+  /*teksten op de auto plaatjes aanpassen*/
+  .carnametext {
+    font-size: 2vw;
+  }
+
+  #textstyleourproducts {
+    font-size: 3vw;
+  }
+}
+
+
+
+
 /*text op de producten*/
 .carnametext {
   color: white;
-  font-size: 2vw;
+  font-size:200%;
+  
   margin-left: 2%;
   position: relative;
 
