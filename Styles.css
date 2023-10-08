@@ -11,7 +11,6 @@ body {
 
 
 
-
 /*navigation bar */
 nav {
   /* navigation bar aanmaken */
@@ -24,7 +23,8 @@ nav {
   align-items: center;
 }
 
-ul {
+/*navigatie bar lijst met de links naar de andere pagina's. Ik heb het een class gegeven omdat ik een andere lijst bij de footer wil.*/
+ul.navbarlist {
   /*lijst*/
   list-style-type: none;
   margin: 0;
@@ -34,12 +34,12 @@ ul {
 
 }
 
-li {
+li.navbarlist {
   /*Hoe je de lijst rangschikt*/
   float: left;
 }
 
-li a {
+li a.navbarlist {
   /*Hoe de elementen van de lijst eruit zien*/
   display: block;
   padding: 3vw;
@@ -47,31 +47,31 @@ li a {
   height: auto;
 }
 
-li a:hover {
+li a.navbarlist:hover {
   /* achtergrondkleur als je over een element heen gaat met de cursor */
   background-color: rgb(118, 119, 119, 0.2)
 }
 
-a:link {
+a.navbarlist:link {
   /*Hoe de links op de navigatiebar eruit zien als je ze al hebt bezocht,....*/
   color: rgb(180, 180, 180);
   background-color: transparent;
   text-decoration: none;
 }
 
-a:visited {
+a.navbarlist:visited {
   color: rgb(180, 180, 180);
   background-color: transparent;
   text-decoration: none;
 }
 
-a:hover {
+a.navbarlist:hover {
   color: rgb(180, 180, 180);
   background-color: transparent;
   text-decoration: none;
 }
 
-a:active {
+a.navbarlist:active {
   color: rgb(180, 180, 180);
   background-color: transparent;
   text-decoration: none;
@@ -80,7 +80,7 @@ a:active {
 
 /*navigatiebar responsive maken*/
 @media screen and (min-width: 960px) {
-  .li a {
+  li a.navbarlist {
     display: block;
     padding: 3vw;
     font-size: 2vw;
@@ -99,7 +99,7 @@ a:active {
 
 
 /* text soorten*/
-.paragraphtitle {
+.aboutusparagraphtitle {
   color: white;
   text-align: center;
   font-size: 200%;
@@ -257,7 +257,7 @@ p {
 
 
 /* afmetingen van de about us kolommen division*/
-.row {
+.aboutusrow {
   width: 100%;
   margin-top: 5%;
   margin-left: 5vw;
@@ -265,17 +265,15 @@ p {
 }
 
 /*kolommen*/
-.column {
+.aboutuscolumn {
   width: 100% height: auto;
   text-align: center;
   background-color: rgb(166, 173, 168, 0.7);
   margin-right: 5%;
   margin-bottom: 2%;
-
 }
 
-
-.row:after {
+.aboutusrow:after {
   content: "";
   display: table;
   clear: both;
@@ -284,7 +282,7 @@ p {
 
 /* kolommen responsive maken!!!*/
 @media screen and (min-width: 960px) {
-  .column {
+  .aboutuscolumn {
     float: left;
     width: 25vw;
 
@@ -323,17 +321,17 @@ footer {
 /*Text style voor de hoofdonderwerpen in de footer*/
 .footercolumn h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 25;
+  font-size: 30;
   color: #ffffff;
   font-weight: 500;
 }
 
 
-/*VERBETEREN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 
 /*Andere decoraties voor de lijst van de footer dan de navigatiebar*/
 
-ulfooter {
+ul.footerlist {
   /*lijst*/
   list-style-type: none;
   margin: 0;
@@ -344,49 +342,50 @@ ulfooter {
 }
 
 
-.lifooter {
+li.footerlist {
   /*Hoe je de lijst rangschikt*/
   float: left;
 }
 
-.li a footer {
+li a.footerlist {
   /*Hoe de elementen van de lijst eruit zien*/
   display: block;
   padding: 3vw;
-  font-size: 22px;
+  font-size: 18px;
   height: auto;
 }
 
-li a footer:hover {
-  /* achtergrondkleur als je over een element heen gaat met de cursor */
-  background-color: rgb(19, 246, 246, 0.2)
-}
 
-a footer:link {
+
+a.footerlist:link {
   /*Hoe de links op de navigatiebar eruit zien als je ze al hebt bezocht,....*/
-  color: rgb(180, 180, 180);
+  color: rgb(188, 185, 185);
   background-color: transparent;
   text-decoration: none;
 }
 
-a footer:visited {
-  color: rgb(180, 180, 180);
+a.footerlist:visited {
+  color: rgb(188, 185, 185);
   background-color: transparent;
   text-decoration: none;
 }
 
-a footer:hover {
-  color: rgb(180, 180, 180);
+a.footerlist:hover {
+  color: rgb(188, 185, 185);
   background-color: transparent;
   text-decoration: none;
 }
 
-a footer:active {
-  color: rgb(180, 180, 180);
+a.footerlist:active {
+  color: rgb(188, 185, 185);
   background-color: transparent;
   text-decoration: none;
-
 }
+
+
+
+
+
 
 
 
@@ -483,7 +482,7 @@ a footer:active {
 }
 
 
-/*nav voor alle pagina's behalve de hoofdpagina*/
+/*nav voor alle pagina's behalve de hoofdpagina, groene achtergrondkleur i.p.v doorzichtig*/
 .navpage {
   background-color: #6d745f;
 }
