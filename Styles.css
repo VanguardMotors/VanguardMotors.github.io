@@ -217,8 +217,8 @@ p {
 }
 
 /*Achtergrond van de about us div*/
-.snowymountains {
-  background-image: url('Images/snowymountains.jpg');
+.caronroad {
+  background-image: url('Images/road.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -255,6 +255,10 @@ p {
 }
 
 
+.aboutustext {
+  color: #e3e3e3;
+  font-size: 150%;
+}
 
 /* afmetingen van de about us kolommen division*/
 .aboutusrow {
@@ -268,7 +272,7 @@ p {
 .aboutuscolumn {
   width: 100% height: auto;
   text-align: center;
-  background-color: rgb(166, 173, 168, 0.7);
+  background-color: rgb(94, 94, 94, 0.7);
   margin-right: 5%;
   margin-bottom: 2%;
 }
@@ -297,14 +301,14 @@ p {
 
 /*footer*/
 footer {
-  background-color: #454545;
+  background-color: #ffffff;
   padding: 70px 0;
 
 }
 
 .footercontainer {
-  max-width: 1170px;
-  margin: auto;
+  width: 98%;
+  margin-left: 2%;
 }
 
 .footerrow {
@@ -314,20 +318,29 @@ footer {
 
 .footercolumn {
   width: 15%;
-  padding: 0 15px;
+  padding: 2%;
 }
 
 
 /*Text style voor de hoofdonderwerpen in de footer*/
 .footercolumn h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 30;
-  color: #ffffff;
+  font-size: 120%;
+  color: #000000;
   font-weight: 500;
 }
 
+#companyname {
+  font-size: 300%;
+  color:black;
 
+}
 
+.centercompanylogoandname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*Andere decoraties voor de lijst van de footer dan de navigatiebar*/
 
@@ -344,7 +357,7 @@ ul.footerlist {
 
 li.footerlist {
   /*Hoe je de lijst rangschikt*/
-  float: left;
+  float:left;
 }
 
 li a.footerlist {
@@ -384,7 +397,13 @@ a.footerlist:active {
 
 
 
+/* responsive maken*/
+@media screen and (max-width: 1000px) {
+  .footercolumn {
+    width:30%;
 
+  }
+}
 
 
 
