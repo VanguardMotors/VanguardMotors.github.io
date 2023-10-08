@@ -313,7 +313,7 @@ footer {
 }
 
 .footercolumn {
-  width: 20%;
+  width: 15%;
   padding: 0 15px;
 }
 
@@ -350,7 +350,7 @@ li.footerlist {
 li a.footerlist {
   /*Hoe de elementen van de lijst eruit zien*/
   display: block;
-  padding: 3vw;
+  padding: 2vw;
   font-size: 18px;
   height: auto;
 }
