@@ -330,9 +330,15 @@ footer {
   font-weight: 500;
 }
 
+/*Logo en naam van het bedrijf voor een van de kolommen in de footer*/
+#logofooter {
+  width: 9vw;
+  height: auto;
+}
+
 #companyname {
   font-size: 300%;
-  color:black;
+  color: black;
 
 }
 
@@ -357,11 +363,12 @@ ul.footerlist {
 
 li.footerlist {
   /*Hoe je de lijst rangschikt*/
-  float:left;
+  float: left;
 }
 
 li a.footerlist {
   /*Hoe de elementen van de lijst eruit zien*/
+
   display: block;
   padding: 2vw;
   font-size: 18px;
@@ -396,12 +403,40 @@ a.footerlist:active {
 }
 
 
+/* responsive maken voor telefoon*/
+@media screen and (max-width: 600px) {
+  #companyname {
+    font-size: 30px;
+  }
 
-/* responsive maken*/
-@media screen and (max-width: 1000px) {
+  #logofooter {
+    width: 60px;
+  }
+
+  .footerrow {
+    margin-left: 12%;
+  }
+
   .footercolumn {
-    width:30%;
+    width: 30%;
+    margin-right: 5%;
+    margin-left: 4%;
+  }
 
+  li.footerlist {
+    width: 100%;
+  }
+
+}
+
+/*responsive maken voor ipad*/
+@media screen and (min-width: 750px) and (max-width:1200px) {
+  .footercolumn {
+    width: 25%;
+  }
+
+  li.footerlist {
+    width: 100%;
   }
 }
 
@@ -416,10 +451,21 @@ a.footerlist:active {
 
 
 
-
-
-
 /* -------------------------------------------------Contact site ---------------------------------------------*/
+.contactimage {
+  background-image: url(img_nature.png);
+  height: 100%;
+  width: 100%;
+}
+
+
+}
+
+
+
+
+
+
 
 .kolomc {
   float: left;
