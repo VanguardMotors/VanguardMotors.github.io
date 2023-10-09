@@ -301,6 +301,7 @@ p {
 
 /*footer*/
 footer {
+  bottom: 0px;
   background-color: #ffffff;
   padding: 70px 0;
 
@@ -453,7 +454,7 @@ a.footerlist:active {
 
 /* -------------------------------------------------Contact site ---------------------------------------------*/
 .contactimage {
-  background-image: url(img_nature.png);
+  background-image: url(Images/nature2.webp);
   height: 100%;
   width: 100%;
 }
@@ -506,9 +507,10 @@ a.footerlist:active {
   max-width: 960px;
   margin-left: 0%;
   margin-right: 0%;
-  margin-top: 0%;
+  margin-top: 10%;
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 1rem
+  background-color:white;
 
 }
 
