@@ -220,7 +220,7 @@ p {
 
 /*Achtergrond van de div van een auto in een bos*/
 .carforest {
-  background-image: url('Images/lincolnaviator2020.jpg');
+  background-image: url('Images/carinforestphoto.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -650,26 +650,24 @@ a.footerlist:active {
 
 
 
+/*----------------------------------------Lincoln2020 Aviator product site------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --------------------------------Social page---------------------------------------------------*/
-
-.containersocialpage {
-  position: relative;
-  top: 100px;
+.lincoln2020product {
+  background-image: url('Images/lincolnaviatorproduct.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   height: 100vh;
-  display: grid;
+  margin-top:0px;
+}
+
+#lincoln2020title {
+  margin-top:0px;
+   font-size:10vw;
+  font-family: Helvetica;
+  font-weight: 100%;
+}
+
+#producttitlediv {
+  text-align:center;
 }
