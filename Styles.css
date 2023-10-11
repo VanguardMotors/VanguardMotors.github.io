@@ -87,6 +87,7 @@ a.navbarlist:active {
   }
 }
 
+
 /*Achtergrondkleur geven aan de navbar als je naar beneden scrollt (alleen bij de hoofdpagina)*/
 .navscrolled {
   background: rgb(36, 36, 36, 0.8);
@@ -96,11 +97,7 @@ a.navbarlist:active {
   position: fixed;
   transition: all 0.3s ease;
 }
-
-
 /* einde navigation bar*/
-
-
 
 
 
@@ -118,6 +115,7 @@ p {
   color: #e3e3e3;
   font-size: 200%;
 }
+
 
 
 /*text op de achtergrond video */
@@ -142,26 +140,35 @@ p {
   padding: 14px 70px;
   border-radius: 60px;
   margin-top: 20px;
-  transition: 0.5s;
 }
 
 
 
 
 
+/* Div waar de video en de navigatiebar op komen */
+.backgroundvideodiv {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  display: flex;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  align-items: center;
+  justify-content: center;
+}
 
 
-/* Background video */
+
+/* Background video zelf */
 .back-video {
-  width: 100%;
-  height: 100%;
   position: absolute;
   right: 0px;
   top: 0px;
   z-index: -1;
-
 }
 
+/*responsive maken*/
 @media(min-aspect-ratio:16/9) {
   .back-video {
     width: 100%;
@@ -186,21 +193,6 @@ p {
   }
 }
 
-/* Div waar de video en de navigatiebar op komen */
-.backgroundvideodiv {
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
-  align-items: center;
-  justify-content: center;
-}
-
-
-
 
 
 
@@ -212,22 +204,21 @@ p {
   margin: 0px;
   padding: 0px;
   display: flex;
-  z-index: -1;
-  /* zodat er tekst over hen geplaatst kan worden*/
+  z-index: -1;  /* zodat er tekst over hen geplaatst kan worden*/
   min-width: 100%;
   min-height: 100vh;
 }
 
-/*Achtergrond van de div van een auto in een bos*/
+/*Achtergrond van de div van een auto in een bos hoofdpagina*/
 .carforest {
-  background-image: url('Images/carinforestphoto.jpg');
+  background-image: url('Images/mainpage/carinforestphoto.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /*Achtergrond van de about us div*/
 .caronroad {
-  background-image: url('Images/road.jpg');
+  background-image: url('Images/mainpage/road.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -238,7 +229,7 @@ p {
 
 
 
-/* stijl van de div met de text die steeds verandert op de carforest achtergrond*/
+/* stijl van de division met de text erin die steeds verandert op de carforest achtergrond*/
 .changingtextdiv {
   max-width: 100vw;
   height: 100%;
@@ -264,6 +255,9 @@ p {
 }
 
 
+
+
+/*about us*/
 .aboutustext {
   color: #e3e3e3;
   font-size: 150%;
@@ -313,8 +307,6 @@ footer {
   bottom: 0px;
   background-color: #ffffff;
   padding: 70px 0;
-
-
 }
 
 .footercontainer {
@@ -350,7 +342,6 @@ footer {
 #companyname {
   font-size: 300%;
   color: black;
-
 }
 
 .centercompanylogoandname {
@@ -359,8 +350,8 @@ footer {
   justify-content: center;
 }
 
-/*Andere decoraties voor de lijst van de footer dan de navigatiebar*/
 
+/*Andere decoraties voor de lijst van de footer dan de navigatiebar*/
 ul.footerlist {
   /*lijst*/
   list-style-type: none;
@@ -368,9 +359,7 @@ ul.footerlist {
   padding: 0;
   overflow: hidden;
   background-color: transparent;
-
 }
-
 
 li.footerlist {
   /*Hoe je de lijst rangschikt*/
@@ -385,8 +374,6 @@ li a.footerlist {
   font-size: 18px;
   height: auto;
 }
-
-
 
 a.footerlist:link {
   /*Hoe de links op de navigatiebar eruit zien als je ze al hebt bezocht,....*/
@@ -437,7 +424,6 @@ a.footerlist:active {
   li.footerlist {
     width: 100%;
   }
-
 }
 
 /*responsive maken voor ipad*/
@@ -460,35 +446,13 @@ a.footerlist:active {
 
 
 
-
-
-/* -------------------------------------------------Contact site ---------------------------------------------*/
+/* -------------------------------------------------Contact site (danilo)---------------------------------------------*/
 .contactimage {
   background-image: url(Images/nature2.webp);
   height: 100%;
   width: 100%;
 }
 
-
-}
-
-
-
-
-
-
-
-.kolomc {
-  float: left;
-  width: 25%;
-  text-align: center;
-  height: 15%;
-  background-color: black;
-  margin-right: 7.33%;
-  margin-left: 7.33%;
-  margin-bottom: 10%;
-  display: flex;
-}
 
 .kolomD {
   float: left;
@@ -560,18 +524,13 @@ a.footerlist:active {
 
 
 
-/* -----------------------------------Product page ----------------------------------------------------------*/
-
-#ourcarspage {
-  background-color: white;
-}
+/* -----------------------------------Product page, assortiment met alle auto's ----------------------------------------------------------*/
 
 
 /*nav voor alle pagina's behalve de hoofdpagina, groene achtergrondkleur i.p.v doorzichtig*/
 .navpage {
   background-color: #636363;
 }
-
 
 
 
@@ -586,18 +545,14 @@ a.footerlist:active {
 #ourproductstextdiv {
   width: 100%;
   height: 30%;
-  margin-top: 5%;
 
 }
-
-
 
 
 
 /*div waar de producten in komen*/
 .productdiv {
   width: 100%;
-  margin-top: 5%;
   position: relative;
 }
 
@@ -637,16 +592,12 @@ a.footerlist:active {
 
 
 
-
-
 /*text op de producten*/
 .carnametext {
   color: white;
   font-size: 150%;
-
   margin-left: 2%;
   position: relative;
-
 }
 
 /*ervoor zorgen dat de tekst op het plaatje komt en niet eronder*/
@@ -660,9 +611,9 @@ a.footerlist:active {
 
 
 
-/*----------------------------------------Producten aparte sites------------------*/
+/*----------------------------------------Producten aparte sites-----------------------------------*/
 
-.backgroundproduct {
+.backgroundproductsite {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -701,6 +652,7 @@ a.footerlist:active {
 }
 
 
+/*Naam van de auto als titel*/
 .producttitle {
   margin-top: 0px;
   font-size: 6vw;
@@ -712,6 +664,8 @@ a.footerlist:active {
   text-align: center;
 }
 
+
+/*Specs van de auto*/
 .carspecsdiv {
   background-color: rgb(0, 0, 0, 0.6);
   float: right;
@@ -725,9 +679,11 @@ a.footerlist:active {
   margin-right: 10px;
   font-style: helvetica;
   font-size: 30px;
+  
 }
 
 
+/*Knop om te kopen*/
 .buycardiv {
   bottom: 0px;
   position: absolute;
@@ -735,7 +691,6 @@ a.footerlist:active {
 }
 
 .buycartext {
-
   text-decoration: none;
   display: inline-block;
   color: white;
@@ -743,5 +698,4 @@ a.footerlist:active {
   border: 2px solid #fff;
   padding: 11px 60px;
   border-radius: 60px;
-
 }
