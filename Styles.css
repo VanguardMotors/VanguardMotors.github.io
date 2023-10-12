@@ -451,7 +451,7 @@ a.footerlist:active {
 /* -------------------------------------------------Contact site (danilo)---------------------------------------------------------------------*/
 
 
-
+/*Blokjes met contactgegevens*/
 #rowcontact {
   width: 85%;
   vertical-align: middle;
@@ -476,7 +476,7 @@ a.footerlist:active {
 }
 
 
-/*texten in de vakjes */
+/*teksten in de vakjes */
 #textinkolom {
   color: black;
   font-size: 100%;
@@ -488,9 +488,51 @@ a.footerlist:active {
   opacity: 100%;
 }
 
-#contacttext {
-  
+/*Tekst onder de rij met vakjes*/
+#divcontacttext {
+  margin-top: 5%;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
+
+#contacttext {
+  color: black;
+  font-size: 150%;
+}
+
+
+
+/* responsive maken voor telefoon*/
+@media screen and (max-width: 900px) {
+  .kolomcontact {
+    width: 45%;
+    margin-right: 3%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+  }
+
+  #rowcontact {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/*responsive maken voor ipad*/
+@media screen and (min-width: 1000px) and (max-width:1200px) {
+  .kolomcontact {
+    margin-right: 3%;
+    width: 17%;
+    height: 220px;
+  }
+
+  #rowcontact {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+
+
 /*-----------------------------------Socials---------------------------------------------------------------*/
 
 #textinTableSocials {
@@ -498,6 +540,12 @@ a.footerlist:active {
   font-size: 150%;
 }
 
+#divsocialpage {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+}
 
 
 
@@ -529,6 +577,9 @@ a.footerlist:active {
 
 /*div waar de producten in komen*/
 .productdiv {
+  padding-top: 0.2%;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
   width: 100%;
   position: relative;
 }
