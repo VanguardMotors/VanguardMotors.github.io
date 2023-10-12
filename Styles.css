@@ -75,18 +75,10 @@ a.navbarlist:active {
   text-decoration: none;
 }
 
-
-/*navigatiebar responsive maken*/
-@media screen and (min-width: 960px) {
-  li a.navbarlist {
-    display: block;
-    padding: 3vw;
-    font-size: 2vw;
-    width: 10vw;
-    height: 3vh;
-  }
+.navbarlogo {
+  width: 5vw;
+  height: auto;
 }
-
 
 /*Achtergrondkleur geven aan de navbar als je naar beneden scrollt (alleen bij de hoofdpagina)*/
 .navscrolled {
@@ -99,7 +91,6 @@ a.navbarlist:active {
 }
 
 /* einde navigation bar*/
-
 
 
 
@@ -289,15 +280,6 @@ p {
 }
 
 
-/* kolommen responsive maken!!!*/
-@media screen and (min-width: 960px) {
-  .aboutuscolumn {
-    float: left;
-    width: 25vw;
-
-  }
-}
-
 
 
 
@@ -403,44 +385,6 @@ a.footerlist:active {
 }
 
 
-/* responsive maken voor telefoon*/
-@media screen and (max-width: 600px) {
-  #companyname {
-    font-size: 30px;
-  }
-
-  #logofooter {
-    width: 60px;
-  }
-
-  .footerrow {
-    margin-left: 12%;
-  }
-
-  .footercolumn {
-    width: 30%;
-    margin-right: 5%;
-    margin-left: 4%;
-  }
-
-  li.footerlist {
-    width: 100%;
-  }
-}
-
-/*responsive maken voor ipad*/
-@media screen and (min-width: 750px) and (max-width:1200px) {
-  .footercolumn {
-    width: 25%;
-  }
-
-  li.footerlist {
-    width: 100%;
-  }
-}
-
-
-
 
 
 
@@ -502,34 +446,7 @@ a.footerlist:active {
 
 
 
-/* responsive maken voor telefoon*/
-@media screen and (max-width: 900px) {
-  .kolomcontact {
-    width: 45%;
-    margin-right: 3%;
-    margin-left: 2%;
-    margin-bottom: 5%;
-  }
 
-  #rowcontact {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
-/*responsive maken voor ipad*/
-@media screen and (min-width: 1000px) and (max-width:1200px) {
-  .kolomcontact {
-    margin-right: 3%;
-    width: 17%;
-    height: 220px;
-  }
-
-  #rowcontact {
-    width: 90%;
-    margin-left: 5%;
-  }
-}
 
 
 
@@ -598,24 +515,6 @@ a.footerlist:active {
 }
 
 
-/*Responsive maken!!!*/
-@media screen and (min-width: 1071px) {
-
-  /** Telefoon: auto's op elkaar, ipad en computer: naast elkaar. */
-  .productscolumn {
-    float: left;
-    width: 33.33333%;
-  }
-
-  /*teksten op de auto plaatjes aanpassen*/
-  .carnametext {
-    font-size: 2vw;
-  }
-
-  .textstylepagetitle {
-    font-size: 2vw;
-  }
-}
 
 
 
@@ -727,3 +626,127 @@ a.footerlist:active {
   padding: 11px 60px;
   border-radius: 60px;
 }
+
+/*--------------------------------------------------Alles responsive maken-------------------------------------------------*/
+
+
+
+/*navigatiebar responsive maken*/
+@media screen and (min-width: 960px) {
+  li a.navbarlist {
+    display: block;
+    padding: 3vw;
+    font-size: 2vw;
+    width: 10vw;
+    height: 3vh;
+  }
+}
+
+
+/*Responsive maken producten website!!!*/
+@media screen and (min-width: 1071px) {
+
+  /** Telefoon: auto's op elkaar, ipad en computer: naast elkaar. */
+  .productscolumn {
+    float: left;
+    width: 33.33333%;
+  }
+
+  /*teksten op de auto plaatjes aanpassen*/
+  .carnametext {
+    font-size: 2vw;
+  }
+
+  .textstylepagetitle {
+    font-size: 2vw;
+  }
+}
+
+
+/* kolommen van de about us responsive maken!!!*/
+@media screen and (min-width: 960px) {
+  .aboutuscolumn {
+    float: left;
+    width: 25vw;
+  }
+
+}
+
+
+/*blokken in contactpagina responsive maken voor ipad*/
+@media screen and (min-width: 1000px) and (max-width:1200px) {
+  .kolomcontact {
+    margin-right: 3%;
+    width: 17%;
+    height: 220px;
+  }
+
+  #rowcontact {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+
+/* blokken contactpagina responsive maken voor telefoon*/
+@media screen and (max-width: 900px) {
+  .kolomcontact {
+    width: 45%;
+    margin-right: 3%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+  }
+
+  #rowcontact {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #contacttext {
+    font-size: 90%;
+  }
+
+  .navbarlogo {
+    width: 10vw;
+  }
+}
+
+/*responsive maken voor ipad*/
+@media screen and (min-width: 750px) and (max-width:1200px) {
+  .footercolumn {
+    width: 25%;
+  }
+
+  li.footerlist {
+    width: 100%;
+  }
+}
+
+
+
+/* footer responsive maken voor telefoon*/
+@media screen and (max-width: 600px) {
+  #companyname {
+    font-size: 30px;
+  }
+
+  #logofooter {
+    width: 60px;
+  }
+
+  .footerrow {
+    margin-left: 12%;
+  }
+
+  .footercolumn {
+    width: 30%;
+    margin-right: 5%;
+    margin-left: 4%;
+  }
+
+  li.footerlist {
+    width: 100%;
+  }
+}
+
+
