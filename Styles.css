@@ -413,6 +413,7 @@ a.footerlist:active {
   clear: both;
 }
 
+/*kolommen waarin de contact gegevens in staan*/
 .kolomcontact {
   float: left;
   width: 12%;
@@ -438,8 +439,8 @@ a.footerlist:active {
 /*Tekst onder de rij met vakjes*/
 #divcontacttext {
   margin-top: 5%;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #contacttext {
@@ -455,25 +456,35 @@ a.footerlist:active {
 
 /*-----------------------------------Socials (danilo)---------------------------------------------------------------*/
 
+/*tekst in table bij titles*/
 #textinTableSocials {
   color: black;
   font-size: 150%;
 }
 
+/*div waar de table in staat/ zorgt voor de zwarte lijntjes*/
 #divsocialpage {
   border-top: 3px solid black;
   border-bottom: 3px solid black;
   padding-bottom: 0.5%;
   padding-top: 0.5%;
-
-
 }
 
+/*breedte van de table*/
 table {
   width: 100%;
 }
 
+td {
+  padding: 0%;
+  background-color: #978c8c(90, 88, 88, 0.6);
+}
 
+table,
+th,
+td {
+  border: none;
+}
 
 
 
